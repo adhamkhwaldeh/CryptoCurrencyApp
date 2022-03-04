@@ -1,0 +1,241 @@
+import { StyleSheet } from "react-native";
+import { RFPercentage } from "react-native-responsive-fontsize";
+import DimensHelper from "../helpers/DimensHelper";
+import { theme } from "../styles/theme";
+
+const styles = StyleSheet.create({
+  input: {
+    padding: DimensHelper.paddingMd,
+  },
+  smallButton: {
+    // height: 36,
+    width: "100%",
+    alignItems: "center",
+    justifyContent: "center",
+    // display: "block",
+    // justifyContent: "center",
+    // borderRadius: 30,
+    // alignContent:"center"
+    // backgroundColor: "#94C100",
+    // position: "absolute",
+  },
+  smallButtonWithoutMargin: {
+    // height: 36,
+    // width: "100%",
+    // height:36,
+    padding: 0,
+    alignItems: "center",
+    justifyContent: "center",
+    marginHorizontal: 0,
+    marginVertical: 0,
+  },
+  smallButtonMargin: {
+    // height: 36,
+    // width: "100%",
+    alignItems: "center",
+    justifyContent: "center",
+    marginHorizontal: DimensHelper.marginMd,
+  },
+  normalButton: {
+    height: DimensHelper.buttonHeightMd,
+    width: "100%",
+    alignItems: "center",
+    justifyContent: "center",
+    // display: "block",
+    // justifyContent: "center",
+    // borderRadius: 30,
+    // alignContent:"center"
+    // backgroundColor: "#94C100",
+    // position: "absolute",
+  },
+  contentContainerStyle: {
+    flexGrow: 1,
+    // flex: 1,
+  },
+  normalButtonMargin: {
+    height: 52,
+    // width: "100%",
+    alignItems: "stretch",
+    justifyContent: "center",
+    alignContent: "stretch",
+    marginHorizontal: DimensHelper.marginMd,
+  },
+  buttonText: {
+    // height: "100%",
+    width: "100%",
+    // justifyContent: 'center',
+    // alignItems: "center",
+    textAlign: "center",
+    // textAlignVertical:'center',
+    // color: 'White',
+    color: "white",
+  },
+  buttonOutlinedText: {
+    // height: "100%",
+    width: "100%",
+    // justifyContent: 'center',
+    // alignItems: "center",
+    textAlign: "center",
+    // textAlignVertical:'center',
+    // color: 'White',
+    color: theme.colors?.primary,
+  },
+  fab: {
+    position: "absolute",
+    justifyContent: "flex-end",
+    margin: 16,
+    right: 0,
+    bottom: 0,
+    // flex: 1,
+    // justifyContent: 'flex-end',
+    // marginBottom: 36,
+  },
+  containerTransparent: {
+    flex: 1,
+  },
+  container: {
+    flex: 1,
+    backgroundColor: "#ffffff",
+  },
+  listItemContainer: {
+    width: "100%",
+    flexDirection: "column",
+    justifyContent: "space-between",
+    // alignItems: "center",
+    backgroundColor: "white",
+  },
+  stepIndicator: {
+    // marginVertical: 50,
+    paddingTop: DimensHelper.paddingMd,
+    paddingBottom: DimensHelper.paddingSm,
+  },
+  page: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  stepLabel: {
+    fontSize: 12,
+    textAlign: "center",
+    fontWeight: "500",
+    color: theme.colors.greyDark,
+    textAlignVertical: "center",
+    alignItems: "center",
+    alignContent: "center",
+    alignSelf: "center",
+  },
+  stepLabelSelected: {
+    fontSize: 12,
+    textAlign: "center",
+    fontWeight: "500",
+    color: theme.colors.primary,
+  },
+  stepLabelSelectedDark: {
+    fontSize: 14,
+    textAlign: "center",
+    fontWeight: "500",
+    color: "#FFFFFF",
+  },
+  mediumText: {
+    fontSize: 16,
+    // padding:DimensHelper.paddingMd,
+    fontWeight: "bold",
+    // color: 'red'
+  },
+  mediumTextGreyColor: {
+    fontSize: 16,
+    // padding:DimensHelper.paddingMd,
+    fontWeight: "bold",
+    color: "#4e4e4e",
+  },
+  titleText: {
+    fontSize: 20,
+    padding: DimensHelper.paddingMd,
+    // fontWeight: "bold",
+    // color: 'red'
+  },
+  largeText: {
+    fontSize: 24,
+    // fontSize:RFPercentage(4.0),
+    padding: DimensHelper.paddingMd,
+    fontWeight: "bold",
+    // color: 'red'
+  },
+  largeLargeText: {
+    // fontSize: 24,
+    fontSize: RFPercentage(4.0),
+    padding: DimensHelper.paddingMd,
+    fontWeight: "bold",
+    // color: 'red'
+  },
+  largeButtonText: {
+    fontSize: 20,
+    padding: DimensHelper.paddingMd,
+    fontWeight: "bold",
+    color: "white",
+  },
+  largeButtonTextHollow: {
+    fontSize: 20,
+    padding: DimensHelper.paddingMd,
+    fontWeight: "bold",
+    color: theme.colors.primary,
+  },
+  baseText: {
+    fontFamily: "SFUIDisplay-Regular",
+  },
+  verticleLine: {
+    height: "100%",
+    width: 1,
+    opacity: 0.5,
+    backgroundColor: "#909090",
+  },
+  map: {
+    ...StyleSheet.absoluteFillObject,
+  },
+  homePageBtn: {
+    flex: 1,
+    margin: DimensHelper.marginMd,
+    alignContent: "center",
+    alignItems: "center",
+    // alignSelf: 'center',
+    justifyContent: "center",
+    textAlign: "center",
+    // alignSelf:'center',
+    borderRadius: DimensHelper.radiusXMd,
+    // backgroundColor: 'rgba(53, 56, 71,0.8)',//'#9296ad', //theme.colors.primary,
+  },
+  homePageBtnText: {
+    fontSize: RFPercentage(2.5),
+    // color: theme.colors.primary,
+    color: "white",
+    // fontWeight: 'bold',
+    fontFamily: "Ubuntu-Regular",
+  },
+  attendanceBtn: {
+    flex: 1,
+    // minHeight: 150,
+    margin: DimensHelper.marginMd,
+    alignContent: "center",
+    alignItems: "center",
+    alignSelf: "center",
+    justifyContent: "space-around",
+    borderRadius: 20,
+  },
+  tagContainer: {
+    flex: 1,
+    justifyContent: "flex-end",
+    alignItems: "flex-end",
+    backgroundColor: "white",
+  },
+  tagContent: {
+    backgroundColor: theme.colors.accent,
+    alignItems: "center",
+    justifyContent: "center",
+    borderTopLeftRadius: DimensHelper.radiusXMd,
+    borderBottomLeftRadius: DimensHelper.radiusXMd,
+    // margin: DimensHelper.marginSm,
+    paddingHorizontal: DimensHelper.paddingMd,
+    paddingBottom: DimensHelper.paddingSm,
+  },
+});
+export default styles;
